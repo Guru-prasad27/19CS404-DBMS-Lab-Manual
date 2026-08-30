@@ -261,5 +261,8 @@ INSERT INTO Customers(CustomerID,Name,Address,ZipCode) VALUES (308,"Peter Parker
 
 <img width="1240" height="322" alt="image" src="https://github.com/user-attachments/assets/44a65984-2a31-4db2-ac29-595578dc4938" />
 
+## SCORE:
+<img width="1492" height="707" alt="image" src="https://github.com/user-attachments/assets/acd90741-bace-4bf3-a6c0-248b1fcd72f9" />
+
 ## RESULT
 Thus, the SQL queries to implement different types of constraints and DDL commands have been executed successfully.
