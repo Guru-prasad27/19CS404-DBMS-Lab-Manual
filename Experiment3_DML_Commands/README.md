@@ -192,7 +192,7 @@ delete from Customer where Grade >= 2;
 <img width="875" height="522" alt="image" src="https://github.com/user-attachments/assets/03c91b89-1c4b-4750-9e31-a352d239f369" />
 
 
-
+Grades:
 <img width="1413" height="605" alt="image" src="https://github.com/user-attachments/assets/6823b29a-6d2b-49dd-a630-45191aeeeec4" />
 
 
