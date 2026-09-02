@@ -28,7 +28,23 @@ END;
 # PL/SQL Programs – Steps and Expected Output
 
 ## 1. Write a PL/SQL program to find the Greatest of Two Numbers
+## Program:
+```
+SET SERVEROUTPUT ON;
 
+DECLARE
+    num1 NUMBER := 50;
+    num2 NUMBER := 80;
+BEGIN
+    IF num1 > num2 THEN
+        DBMS_OUTPUT.PUT_LINE('Greater number is: ' || num1);
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('Greater number is: ' || num2);
+    END IF;
+END;
+/
+
+```
 ### Steps:
 - Declare two numeric variables and initialize them.
 - Use an `IF` statement to compare the values.
@@ -37,10 +53,29 @@ END;
 **Expected Output:**  
 Greater number is: 80
 
+**Output**:
+<img width="1857" height="385" alt="image" src="https://github.com/user-attachments/assets/78239094-1096-4b2b-b293-60c74028ce1d" />
 ---
 
 ## 2. Write a PL/SQL program to Calculate Sum of First N Natural Numbers
+## Program:
+```
+SET SERVEROUTPUT ON;
 
+DECLARE
+    n NUMBER := 10;
+    sum NUMBER := 0;
+    i NUMBER := 1;
+BEGIN
+    WHILE i <= n LOOP
+        sum := sum + i;
+        i := i + 1;
+    END LOOP;
+
+    DBMS_OUTPUT.PUT_LINE('Sum of first ' || n || ' natural numbers is: ' || sum);
+END;
+/
+```
 ### Steps:
 - Declare a variable `n` and assign a value (e.g., 10).
 - Initialize a `sum` variable to 0.
@@ -50,10 +85,16 @@ Greater number is: 80
 **Expected Output:**  
 Sum of first 10 natural numbers is: 55
 
+## Output:
+<img width="1767" height="451" alt="image" src="https://github.com/user-attachments/assets/139ea95b-1b7e-4f1e-8933-9db9a3854594" />
+
 ---
 
 ## 3. Write a PL/SQL program to generate Fibonacci series
+## Program:
+```
 
+```
 ### Steps:
 - Declare the variable `n` to indicate how many terms to generate.
 - Initialize the first two Fibonacci numbers (0 and 1).
@@ -63,6 +104,9 @@ Sum of first 10 natural numbers is: 55
 **Expected Output:**  
 n = 7  
 Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8
+
+## Output:
+
 
 ---
 
