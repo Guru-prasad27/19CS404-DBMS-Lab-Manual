@@ -143,51 +143,84 @@ WHERE c.grade<=100;
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="1240" height="792" alt="Screenshot 2026-09-01 150449" src="https://github.com/user-attachments/assets/63a3e90e-638d-487d-af8a-cbdd3b4165b0" />
+<img width="1166" height="707" alt="Screenshot 2026-09-01 150502" src="https://github.com/user-attachments/assets/1cae6b21-0ca1-43c5-9ba5-48530728d729" />
+
 
 ```sql
--- Paste your SQL code below for Question 7
+SELECT c.cust_name,
+       c.city,
+       o.ord_no,
+       o.ord_date,
+       o.purch_amt AS "Order Amount",
+       s.name,
+       s.commission
+FROM customer c
+LEFT JOIN orders o
+    ON c.customer_id = o.customer_id
+   AND c.salesman_id = o.salesman_id
+LEFT JOIN salesman s
+    ON c.salesman_id = s.salesman_id;
 ```
 
 **Output:**
+<img width="1225" height="762" alt="Screenshot 2026-09-01 150528" src="https://github.com/user-attachments/assets/3955d734-dbb2-4cb7-af0c-d3fc0e70558d" />
 
-![Output7](output.png)
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="1110" height="846" alt="Screenshot 2026-09-01 150629" src="https://github.com/user-attachments/assets/80dbfdff-2a95-4224-9535-152e7593c538" />
+
 
 ```sql
--- Paste your SQL code below for Question 8
+SELECT s.name AS Salesman,
+       c.cust_name,
+       s.city
+FROM salesman s
+INNER JOIN customer c
+    ON s.city = c.city;
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="1112" height="657" alt="Screenshot 2026-09-01 150648" src="https://github.com/user-attachments/assets/5fb506c2-fb49-4fab-824f-d32e1d6e449c" />
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="1233" height="543" alt="Screenshot 2026-09-01 150701" src="https://github.com/user-attachments/assets/e56216dd-b5a7-4f45-81d8-14a4064bf460" />
 
 ```sql
--- Paste your SQL code below for Question 9
+SELECT s.name AS salesman_name,c.cust_name AS customer_name FROM Salesman s
+LEFT JOIN Customer c
+ON c.salesman_id=s.salesman_id;
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="716" height="838" alt="Screenshot 2026-09-01 150731" src="https://github.com/user-attachments/assets/fc4a8c70-9adb-481c-b260-ae3b3030bf9a" />
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="1226" height="742" alt="Screenshot 2026-09-01 150744" src="https://github.com/user-attachments/assets/f7142998-cf52-4ec7-b662-c7967dd64ab8" />
+<img width="685" height="223" alt="Screenshot 2026-09-01 150754" src="https://github.com/user-attachments/assets/6b6fb54c-bc35-4e92-9c9d-e2401c91b6e5" />
+
 
 ```sql
--- Paste your SQL code below for Question 10
+SELECT o.ord_no,o.purch_amt,c.cust_name,c.city FROM customer c
+JOIN orders o
+ON c.customer_id=o.customer_id
+WHERE o.purch_amt BETWEEN 500 AND 2000;
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="1232" height="400" alt="Screenshot 2026-09-01 150813" src="https://github.com/user-attachments/assets/38b230f0-2201-4ac7-a5ea-74b6056403ed" />
+
+## Grade:
+
+<img width="1445" height="747" alt="Screenshot 2026-09-01 150833" src="https://github.com/user-attachments/assets/886d9812-f2ba-4869-8591-0a37e74e1b96" />
 
 
 ## RESULT
